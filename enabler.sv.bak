@@ -1,0 +1,11 @@
+module enabler(
+	input go,
+	input rst,
+	input enable,
+	output en,
+	output en_done
+);
+
+
+
+endmodule

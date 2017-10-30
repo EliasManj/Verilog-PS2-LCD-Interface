@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at ps2_lcd_interface.sv(4): object "rst" differs only in case from object "rsT" in the same scope
+Info (10281): Verilog HDL Declaration information at enabler.sv(10): object "en_done" differs only in case from object "EN_DONE" in the same scope
+Info (10281): Verilog HDL Declaration information at initializer.sv(10): object "done" differs only in case from object "DONE" in the same scope
+Info (10281): Verilog HDL Declaration information at lcd_driver.sv(18): object "INIT" differs only in case from object "init" in the same scope

@@ -1,0 +1,56 @@
+
+State Machine - |main3|ps2_lcd_interface:interface0|lcd_driver:lcd_driver0|state
+Name state.WAITEN state.ENABLER state.WAITCMD2 state.CHECK state.WAITCMD state.INIT state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.INIT 0 0 0 0 0 1 1 
+state.WAITCMD 0 0 0 0 1 0 1 
+state.CHECK 0 0 0 1 0 0 1 
+state.WAITCMD2 0 0 1 0 0 0 1 
+state.ENABLER 0 1 0 0 0 0 1 
+state.WAITEN 1 0 0 0 0 0 1 
+
+State Machine - |main3|ps2_lcd_interface:interface0|lcd_driver:lcd_driver0|enabler:enabler0|state
+Name state.EN_LOW state.RST1 state.EN_HIGH state.RST0 state.WAITAS state.SETRS state.WAIT state.IDLE state.EN_DONE 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.WAIT 0 0 0 0 0 0 1 1 0 
+state.SETRS 0 0 0 0 0 1 0 1 0 
+state.WAITAS 0 0 0 0 1 0 0 1 0 
+state.RST0 0 0 0 1 0 0 0 1 0 
+state.EN_HIGH 0 0 1 0 0 0 0 1 0 
+state.RST1 0 1 0 0 0 0 0 1 0 
+state.EN_LOW 1 0 0 0 0 0 0 1 0 
+state.EN_DONE 0 0 0 0 0 0 0 1 1 
+
+State Machine - |main3|ps2_lcd_interface:interface0|lcd_driver:lcd_driver0|initializer:initializer0|state
+Name state.DONE state.WAITD6 state.WRMODE state.WAITD5 state.DISPON state.WAITD4 state.DISPCLR state.WAITD3 state.DISPLAYOFF state.WAITD2 state.FS2 state.WAIT100US state.WAITD1 state.FS1 state.WAIT4MS state.WAITD0 state.FS0 state.WAIT15MS state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.WAIT15MS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.FS0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.WAITD0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.WAIT4MS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.FS1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.WAITD1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.WAIT100US 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.FS2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WAITD2 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.DISPLAYOFF 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.WAITD3 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.DISPCLR 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.WAITD4 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.DISPON 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.WAITD5 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.WRMODE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.WAITD6 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.DONE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |main3|ps2_lcd_interface:interface0|lcd_driver:lcd_driver0|initializer:initializer0|enabler:enabler0|state
+Name state.EN_LOW state.RST1 state.EN_HIGH state.RST0 state.WAITAS state.SETRS state.WAIT state.IDLE state.EN_DONE 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.WAIT 0 0 0 0 0 0 1 1 0 
+state.SETRS 0 0 0 0 0 1 0 1 0 
+state.WAITAS 0 0 0 0 1 0 0 1 0 
+state.RST0 0 0 0 1 0 0 0 1 0 
+state.EN_HIGH 0 0 1 0 0 0 0 1 0 
+state.RST1 0 1 0 0 0 0 0 1 0 
+state.EN_LOW 1 0 0 0 0 0 0 1 0 
+state.EN_DONE 0 0 0 0 0 0 0 1 1 
